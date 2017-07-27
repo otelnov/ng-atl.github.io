@@ -8,7 +8,7 @@
   "scripts": {
     "prestart": "npm run build",
     "start": "./node_modules/.bin/ts-node src/server.ts",
-    "build": "ng build --env=prod && gulp before:ngc && ngc && gulp after:ngc",
+    "build": "ng build --prod && gulp before:ngc && ngc && gulp after:ngc",
     "deploy": "gcloud app deploy"
   },
   "private": true,
@@ -35,7 +35,7 @@
     "zone.js": "^0.8.12"
   },
   "devDependencies": {
-    "@angular/cli": "^1.2.0-rc.1",
+    "@angular/cli": "^1.2.5",
     "@angular/compiler-cli": "^4.2.4",
     "@types/jasmine": "2.5.45",
     "@types/node": "~8.0.2",
